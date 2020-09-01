@@ -2224,15 +2224,7 @@ public class PerChannelBookieClient extends ChannelInboundHandlerAdapter {
 
         public void release() {}
     }
-
-    /**
-     * Note : Helper functions follow
-     */
-
-    /**
-     * @param status
-     * @return {@link BKException.Code.UNINITIALIZED} if the statuscode is unknown.
-     */
+    
     private int statusCodeToExceptionCode(StatusCode status) {
         switch (status) {
             case EOK:
